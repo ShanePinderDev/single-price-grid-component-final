@@ -1,0 +1,327 @@
+/*
+Visual scale 
+
+2.488rem/39.81px	A Visual Type Scale
+2.074rem/33.18px	A Visual Type Scale
+1.728rem/27.65px	A Visual Type Scale
+1.44rem/23.04px	A Visual Type Scale
+1.2rem/19.20px	A Visual Type Scale
+1rem/16.00px	A Visual Type Scale
+0.833rem/13.33px	A Visual Type Scale
+0.694rem/11.11px	A Visual Type Scale
+0.579rem/9.26px	A Visual Type Scale
+*/
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Typography */
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  background: #e6eff5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-text-title {
+  color: #2ab3b1;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 23px;
+  letter-spacing: -0.25px;
+}
+
+.join-text {
+  color: #c0df33;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 20px;
+  letter-spacing: -0.1875px;
+}
+
+.join-gain-access {
+  color: #9aa7be;
+  font-size: 0.875rem;
+  line-height: 26px;
+  letter-spacing: -0.175px;
+}
+
+.subscription-title {
+  color: #fff;
+  font-size: 1.125rem;
+  height: 21px;
+  width: 182px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+  text-align: left;
+}
+
+.subscription-text-per-month {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+}
+
+.subscription-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+}
+
+.monthly-subscription {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: -0.4px;
+  color: #fff;
+}
+
+.why-us-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+}
+.info-list {
+  color: rgba(255, 255, 255, 0.75);
+  mix-blend-mode: normal;
+  font-size: 0.875rem;
+  list-style: none;
+  line-height: 20px;
+  letter-spacing: -0.175px;
+  padding-inline-start: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Layout */
+
+.container {
+  max-width: 19.438em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+}
+
+.join {
+  background-color: #fff;
+  width: 100%;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.subscribe {
+  background-color: #2ab3b1;
+  position: relative;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.subscription-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.subscription-price {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 37.4096px;
+  letter-spacing: -0.4px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: -5px;
+}
+
+.why {
+  background-color: hsl(179, 62%, 43%);
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+/* Button Styles */
+.btn-subscribe {
+  display: inline-block;
+  border: none;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 0;
+  background-color: #c0df33;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  z-index: 3;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: rgba(192, 223, 51, 0.75);
+}
+
+.btn-subscribe:active {
+  transform: scale(0.99);
+}
+/* Footer styles */
+
+.attribution {
+  background-color: #e6eff5;
+  font-size: 0.6875rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Media query */
+@media (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 39.688em;
+  }
+  .join {
+    grid-column: 1 / -1;
+  }
+  .subscribe {
+    border-bottom-left-radius: 12px;
+  }
+  .subscription-text {
+    width: 14.875em;
+  }
+  .why {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 12px;
+  }
+  .info-list {
+    width: 14.875em;
+  }
+  .join-text-title {
+    font-size: 1.5rem;
+    line-height: 1.75em;
+    letter-spacing: -0.3px;
+  }
+  .join-text {
+    font-size: 1.125rem;
+    line-height: 28px;
+    letter-spacing: -0.225px;
+  }
+  .join-gain-access {
+    font-size: 1rem;
+    letter-spacing: -0.2px;
+  }
+}
